@@ -3,6 +3,7 @@ import NoteForm from './components/NoteForm'
 import NoteList from './components/NoteList'
 import SearchBar from './components/SearchBar'
 import Header from './components/Header'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   // State for notes and search query
