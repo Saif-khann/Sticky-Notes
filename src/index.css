@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+@layer components {
+  .note-card {
+    @apply bg-yellow-100 rounded-md p-4 shadow-sm;
+  }
+  
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white;
+  }
+  
+  .btn-danger {
+    @apply bg-danger text-white;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white;
+  }
+}
